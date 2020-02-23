@@ -1,4 +1,5 @@
 # 学习 B 站 vueTypeScript 代码
+视频链接: https://www.bilibili.com/video/av83946465/?spm_id_from=333.788.videocard.2
 
 ## 技术栈
 1. vue
