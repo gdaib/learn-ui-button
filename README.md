@@ -9,7 +9,7 @@
 
 ## 技巧梳理
 
-## style 中定义的变量可以在 css 中用 var 关键字 访问
+### style 中定义的变量可以在 css 中用 var 关键字 访问
 
 ```html
 style = '--color-tint: $color';
@@ -17,7 +17,7 @@ style = '--color-tint: $color';
 background: var(--color-tint);
 ```
 
-## less 中使用 mixins
+### less 中使用 mixins
 ```css
 .className(@size) {
     font-size: @size;
@@ -28,8 +28,16 @@ background: var(--color-tint);
 }
 ```
 
+### css 高亮
 
-## vscode 中的 settings/files.exclude 
+可以根据百分比对当前色值进行调整
+
+```css
+filter: brightness(80%);
+```
+
+
+### vscode 中的 settings/files.exclude 
 这个是用来隐藏项目中不必要的文件的，免得显得眼花缭乱
 
 ```json
