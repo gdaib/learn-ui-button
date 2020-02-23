@@ -1,24 +1,50 @@
-# uikit
+# 学习 B 站 vueTypeScript 代码
 
-## Project setup
-```
-yarn install
-```
+## 技术栈
+1. vue
+2. typeScript
+3. less
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
 
-### Compiles and minifies for production
-```
-yarn build
-```
+## 技巧梳理
 
-### Lints and fixes files
-```
-yarn lint
+## style 中定义的变量可以在 css 中用 var 关键字 访问
+
+```html
+style = '--color-tint: $color';
+
+background: var(--color-tint);
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## less 中使用 mixins
+```css
+.className(@size) {
+    font-size: @size;
+}
+
+.a {
+    .className(14px);
+}
+```
+
+
+## vscode 中的 settings/files.exclude 
+这个是用来隐藏项目中不必要的文件的，免得显得眼花缭乱
+
+```json
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/node_modules": true,
+        "**/.eslintrc.js": true,
+        "**/.gitignore": true,
+        "**/.browserslistrc": true,
+        "**/tsconfig.json": true, 
+        "**/babel.config.js": true,
+    }
+}
+```
